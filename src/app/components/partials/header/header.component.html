@@ -1,0 +1,36 @@
+<header
+  class="font-custom justify-between flex px-5 py-2 shadow-lg hover:transition-colors"
+>
+  <div>
+    <a routerLink="/" class="logo text-2xl text-red-500">My-Blog!</a>
+  </div>
+
+  <div class="flex items-center justify-center font-light text-sm">
+    <div class="flex border-2 border-gray-200 rounded">
+      <input type="text" class="px-4 w-40" placeholder="Search..." />
+      <button class="px-4 text-white bg-gray-600 border-l">Search</button>
+    </div>
+  </div>
+
+  <div class="font-light">
+    <ul class="flex space-x-4">
+      <li class="">
+        <a routerLink="/login">Login</a>
+      </li>
+      <li class="relative">
+        <a routerLink="/dashboard">John</a>
+        <div class="absolute z-10 hidden">
+          <a class="w-full dropdown-menu">Logout</a>
+        </div>
+      </li>
+      <li>
+        <button
+          routerLink="/login"
+          class="bg-blue-500 hover:bg-blue-700 text-white px-4 rounded-full"
+        >
+          Signup
+        </button>
+      </li>
+    </ul>
+  </div>
+</header>
